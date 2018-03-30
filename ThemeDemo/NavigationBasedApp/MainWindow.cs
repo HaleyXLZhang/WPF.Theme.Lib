@@ -1,20 +1,39 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Reflection;
-using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
+using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 
 namespace NavigationTheme
 {
     public class MainWindow : NavigationWindow
     {
+
         static MainWindow()
         {
             DefaultStyleKeyProperty.OverrideMetadata(typeof(MainWindow), new FrameworkPropertyMetadata(typeof(MainWindow)));
+        }
+        private PropertyChangedEventHandler PropertyChangedEvent;
+        public event PropertyChangedEventHandler PropertyChanged
+        {
+            add
+            {
+                this.PropertyChangedEvent = (PropertyChangedEventHandler)Delegate.Combine(this.PropertyChangedEvent, value);
+            }
+            remove
+            {
+                this.PropertyChangedEvent = (PropertyChangedEventHandler)Delegate.Remove(this.PropertyChangedEvent, value);
+            }
+        }
+        private ObservableCollection<MenuItem> _Menu;
+        public ObservableCollection<MenuItem> Menu
+        {
+            get { return this._Menu; }
+            set { this._Menu = value; }
         }
         public string UserName { get; set; }
         public string ApplicationVersion { get; set; }
@@ -22,10 +41,23 @@ namespace NavigationTheme
         public MainWindow()
         {
             UserName = Environment.UserName;
+            this.AllowsTransparency = true;
+            this.WindowStyle = WindowStyle.None;
             ApplicationVersion = Assembly.GetExecutingAssembly().GetName().Version.ToString();
             this.AddHandler(Button.ClickEvent, new RoutedEventHandler(ButtonClicked));
             this.MouseMove += MainWindow_MouseMove;
-           
+
+            //User icon
+            System.Windows.Controls.Image image = this.GetTemplateChild("ImageUrl") as System.Windows.Controls.Image;
+            if (image != null && image.Visibility == Visibility.Visible)
+            {
+                BitmapImage bitmapImage = new BitmapImage();
+                bitmapImage.BeginInit();
+                bitmapImage.UriSource = new Uri("http://photos.global.hsbc/casual/square/" + Environment.UserName.Substring(0, 4) + "/" + Environment.UserName + ".jpg");
+                bitmapImage.EndInit();
+                image.Source = bitmapImage;
+            }
+
         }
         private void MainWindow_MouseMove(object sender, MouseEventArgs e)
         {
@@ -36,24 +68,14 @@ namespace NavigationTheme
         }
         private void ButtonClicked(object sender, RoutedEventArgs e)
         {
-            if ((e.OriginalSource as FrameworkElement).Name.Contains("close")) { this.Close(); }
-            if ((e.OriginalSource as FrameworkElement).Name.Contains("min"))
+            if ((e.OriginalSource as FrameworkElement).Name.Contains("closeButton")) { this.Close(); }
+            if ((e.OriginalSource as FrameworkElement).Name.Contains("minimizeButton"))
             {
                 this.WindowState = System.Windows.WindowState.Minimized;
-                this.WindowStyle = System.Windows.WindowStyle.None;
             }
-            if ((e.OriginalSource as FrameworkElement).Name.Contains("restore"))
+            if ((e.OriginalSource as FrameworkElement).Name.Contains("restoreButton"))
             {
-                if (this.WindowState == WindowState.Maximized)
-                {
-                    this.WindowState = System.Windows.WindowState.Normal;
-                    this.WindowStyle = System.Windows.WindowStyle.None;
-                }
-                else
-                {
-                    this.WindowState = System.Windows.WindowState.Maximized;
-                    this.WindowStyle = System.Windows.WindowStyle.None;
-                }
+                this.WindowState = (WindowState)((this.WindowState == WindowState.Normal) ? 2 : 0);
             }
         }
     }

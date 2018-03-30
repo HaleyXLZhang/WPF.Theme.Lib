@@ -40,7 +40,7 @@
                 <ControlTemplate ControlTemplate.TargetType="{x:Type local:MainWindow}">
                     <FrameworkTemplate.Resources>
                         <ResourceDictionary>
-                            <!--<local:CaseConverter x:Key="myCaseConverter" xmlns:local="clr-namespace:SFE.Theme;assembly=SFE.Theme,Version=1.0.0.0,Culture=neutral,PublicKeyToken=null" />-->
+                            <local:CaseConverter x:Key="myCaseConverter" />
                             <SolidColorBrush x:Key="HighlightedBackgroundBrush" SolidColorBrush.Color="#FF353F42" />
                             <SolidColorBrush x:Key="MenuBackgroundBrush" SolidColorBrush.Color="#FF353F42" />
                             <SolidColorBrush x:Key="NormalBorderBrush" SolidColorBrush.Color="#FF353F42" />
@@ -185,7 +185,7 @@
                                                     <ColumnDefinition />
                                                     <ColumnDefinition ColumnDefinition.Width="50" />
                                                 </Grid.ColumnDefinitions>
-                                                <Image Grid.Column="0" Stretch="Uniform" FrameworkElement.Margin="15"  Source="\Resources\Images\hsbc-logo-white.png" />
+                                                <Image Grid.Column="0" Stretch="Uniform" FrameworkElement.Margin="15"  Source="\NavigationTheme;component\Resources\Images\hsbc-logo-white.png" />
                                                 <StackPanel Grid.Column="1" FrameworkElement.HorizontalAlignment="Left" FrameworkElement.VerticalAlignment="Center" StackPanel.Orientation="Horizontal" FrameworkElement.Margin="10 0 0 0">
                                                     <Menu Menu.Name="MainMenu" ItemsControl.ItemsSource="{Binding Path=Menu,RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=Window}}" />
                                                 </StackPanel>

@@ -1,18 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace ThemeDemo
 {
@@ -36,7 +25,8 @@ namespace ThemeDemo
             if (e.ExtraData != null)
             {
                 // Do something here...
-                MessageBox.Show(string.Format("Capture Page Skip Message:{0}",e.ExtraData));
+                System.Windows.MessageBox.Show(this,string.Format("Capture Page Skip Message:{0}",e.ExtraData),"Capture",MessageBoxButton.OK,MessageBoxImage.Information,MessageBoxResult.OK);
+              
             }
         }
 

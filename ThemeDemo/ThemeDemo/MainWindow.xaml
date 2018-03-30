@@ -4,5 +4,11 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"     
         xmlns:sfs="clr-namespace:NavigationTheme;assembly=NavigationTheme"
-        mc:Ignorable="d" ShowsNavigationUI="False" Background="White" Title="Auto-Tool" Source="Page/MainPage.xaml" >
+        mc:Ignorable="d" 
+        ShowsNavigationUI="False"  
+        ResizeMode="CanResize" 
+        Background="White" 
+        Title="Auto-Tool" 
+       
+        Source="Pages/MainPage.xaml" >
 </sfs:MainWindow>
