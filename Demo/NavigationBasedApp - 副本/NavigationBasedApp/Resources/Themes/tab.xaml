@@ -1,0 +1,114 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+    <Style x:Key="StandardTabControl" 
+           Style.TargetType="{x:Type TabControl}" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+        <Style.Resources>
+            <ResourceDictionary>
+                <DataTemplate x:Key="ClosableTabItemTemplate">
+                    <DockPanel>
+                        <ContentPresenter FrameworkElement.VerticalAlignment="Center" ContentPresenter.Content="{Binding DisplayName}">
+                            <FrameworkElement.Resources>
+                                <ResourceDictionary>
+                                    <Style Style.TargetType="{x:Type TextBlock}">
+                                        <Setter Setter.Property="TextBlock.Foreground" Setter.Value="#FFF5F5F5" />
+                                        <Setter Setter.Property="TextBlock.FontSize" Setter.Value="20" />
+                                    </Style>
+                                </ResourceDictionary>
+                            </FrameworkElement.Resources>
+                        </ContentPresenter>
+                    </DockPanel>
+                </DataTemplate>
+                <Style Style.TargetType="{x:Type TabItem}">
+                    <Setter Setter.Property="FrameworkElement.FocusVisualStyle" Setter.Value="{x:Null}" />
+                    <Setter Setter.Property="Control.Background" Setter.Value="#FF808080" />
+                    <Setter Setter.Property="Control.Foreground" Setter.Value="#FFFFFFFF" />
+                    <Setter Setter.Property="Control.Template">
+                        <Setter.Value>
+                            <ControlTemplate ControlTemplate.TargetType="{x:Type TabItem}">
+                                <Grid FrameworkElement.Height="30" Panel.Background="{TemplateBinding Control.Background}" UIElement.SnapsToDevicePixels="True">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition ColumnDefinition.Width="Auto" />
+                                        <ColumnDefinition ColumnDefinition.Width="25" />
+                                    </Grid.ColumnDefinitions>
+                                    <ContentPresenter Grid.Column="0" FrameworkElement.Margin="10,0,10,0" FrameworkElement.HorizontalAlignment="Center" FrameworkElement.VerticalAlignment="Center" ContentPresenter.ContentSource="Header" />
+                                    <Button Grid.Column="1" FrameworkElement.Width="15" FrameworkElement.Height="15" FrameworkElement.HorizontalAlignment="Center" FrameworkElement.VerticalAlignment="Center" DockPanel.Dock="Right" ButtonBase.Command="{Binding Path=CloseCommand}">
+                                        <FrameworkElement.Style>
+                                            <Style Style.TargetType="{x:Type Button}">
+                                                <Setter Setter.Property="Control.Background" Setter.Value="#00FFFFFF" />
+                                                <Setter Setter.Property="FrameworkElement.Cursor" Setter.Value="Hand" />
+                                                <Setter Setter.Property="UIElement.Focusable" Setter.Value="False" />
+                                                <Setter Setter.Property="Control.Template">
+                                                    <Setter.Value>
+                                                        <ControlTemplate ControlTemplate.TargetType="{x:Type Button}">
+                                                            <Grid Panel.Background="{TemplateBinding Control.Background}">
+                                                                <Path Path.Name="ButtonPath" FrameworkElement.Margin="2" FrameworkElement.HorizontalAlignment="Center" FrameworkElement.VerticalAlignment="Center" Path.Data="M0,0L1,1 M0,1L1,0" Shape.Stretch="Uniform" Shape.Stroke="{DynamicResource CloseButtonStroke}" Shape.StrokeEndLineCap="Flat" Shape.StrokeStartLineCap="Flat" Shape.StrokeThickness="2" />
+                                                            </Grid>
+                                                            <ControlTemplate.Triggers>
+                                                                <MultiDataTrigger>
+                                                                    <MultiDataTrigger.Conditions>
+                                                                        <Condition Condition.Binding="{Binding IsSelected,RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=TabItem}}" Condition.Value="false" />
+                                                                        <Condition Condition.Binding="{Binding IsMouseOver,RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=TabItem}}" Condition.Value="false" />
+                                                                    </MultiDataTrigger.Conditions>
+                                                                    <MultiDataTrigger.Setters>
+                                                                        <Setter Setter.Property="UIElement.Visibility" Setter.Value="Hidden" />
+                                                                    </MultiDataTrigger.Setters>
+                                                                </MultiDataTrigger>
+                                                                <Trigger Trigger.Property="UIElement.IsEnabled" Trigger.Value="False">
+                                                                    <Setter Setter.Property="UIElement.Visibility" Setter.Value="Hidden" />
+                                                                </Trigger>
+                                                                <Trigger Trigger.Property="UIElement.IsMouseOver" Trigger.Value="True">
+                                                                    <Setter Setter.Value="{DynamicResource CloseButtonBackgroundHighlighted}" Setter.Property="Control.Background" />
+                                                                    <Setter Setter.TargetName="ButtonPath" Setter.Value="{DynamicResource CloseButtonStrokeHighlighted}" Setter.Property="Shape.Stroke" />
+                                                                </Trigger>
+                                                                <Trigger Trigger.Property="ButtonBase.IsPressed" Trigger.Value="True">
+                                                                    <Setter Setter.Value="{DynamicResource CloseButtonBackgroundPressed}" Setter.Property="Control.Background" />
+                                                                    <Setter Setter.TargetName="ButtonPath" Setter.Value="{DynamicResource CloseButtonStroke}" Setter.Property="Shape.Stroke" />
+                                                                    <Setter Setter.TargetName="ButtonPath" Setter.Property="FrameworkElement.Margin" Setter.Value="2.5,2.5,1.5,1.5" />
+                                                                </Trigger>
+                                                            </ControlTemplate.Triggers>
+                                                        </ControlTemplate>
+                                                    </Setter.Value>
+                                                </Setter>
+                                            </Style>
+                                        </FrameworkElement.Style>
+                                    </Button>
+                                </Grid>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Trigger.Property="TabItem.IsSelected" Trigger.Value="False">
+                                        <Setter Setter.Property="Control.Background" Setter.Value="#00FFFFFF" />
+                                    </Trigger>
+                                    <Trigger Trigger.Property="UIElement.IsMouseOver" Trigger.Value="True">
+                                        <Setter Setter.Value="{DynamicResource BorderBrushSelected}" Setter.Property="Control.Background" />
+                                    </Trigger>
+                                    <Trigger Trigger.Property="TabItem.IsSelected" Trigger.Value="True">
+                                        <Setter Setter.Value="{DynamicResource BackgroundSelected}" Setter.Property="Control.Background" />
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </ResourceDictionary>
+        </Style.Resources>
+        <Setter Setter.Property="Control.Template">
+            <Setter.Value>
+                <ControlTemplate ControlTemplate.TargetType="{x:Type TabControl}">
+                    <Grid KeyboardNavigation.TabNavigation="Local">
+                        <Grid.RowDefinitions>
+                            <RowDefinition RowDefinition.Height="Auto" />
+                            <RowDefinition RowDefinition.Height="*" />
+                        </Grid.RowDefinitions>
+                        <Border Border.Background="#00FFFFFF" Border.BorderBrush="{DynamicResource BackgroundSelected}" Border.BorderThickness="0,0,0,3">
+                            <TabPanel FrameworkElement.Name="HeaderPanel" FrameworkElement.Margin="0,0,4,-1" Panel.ZIndex="1" Panel.IsItemsHost="True" KeyboardNavigation.TabIndex="1" />
+                        </Border>
+                        <Border Grid.Row="1" Border.Background="{DynamicResource Background}" />
+                        <ContentPresenter FrameworkElement.Name="PART_SelectedContentHost" Grid.Row="1" ContentPresenter.ContentSource="SelectedContent" />
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
+ 
+
+ 
