@@ -3,7 +3,6 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:ThemeDemo"
       mc:Ignorable="d" 
       d:DesignHeight="300" d:DesignWidth="300"
       Title="MainPage">
@@ -26,18 +25,28 @@
                 </Trigger>
             </Style.Triggers>
         </Style>
+        
     </Page.Resources>
+
+
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="30"/>
-            <RowDefinition Height="30"/>
-            <RowDefinition Height="30"/>
-            <RowDefinition Height="30"/>
-            <RowDefinition Height="30"/>
-            <RowDefinition Height="30"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
         </Grid.RowDefinitions>
         <Button Width="120" Grid.Row="4" Click="Button_Click"  >WelcomePage1</Button>
         <TextBlock Grid.Row="1" Text="Welcome to WPF World1." VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+
+        <TextBox Grid.Row="0" Width="200" Height="30" Margin="3"  Style="{StaticResource LabelOpenFileTextBox}"></TextBox>
+        <TextBox Grid.Row="2" Width="200" Height="30" Margin="3" Style="{StaticResource LabelOpenFolderTextBox}"></TextBox>
+        <TextBox Grid.Row="3" Width="200" Height="30" Margin="3" Style="{StaticResource LabelSaveFileTextBox}"></TextBox>
+
+
     </Grid>
     
 </Page>

@@ -7,7 +7,7 @@
         mc:Ignorable="d" 
         ShowsNavigationUI="False"  
         ResizeMode="CanResize" 
-        Background="White" 
+      Background="White"
         Title="Auto-Tool" 
        
         Source="Pages/MainPage.xaml" >

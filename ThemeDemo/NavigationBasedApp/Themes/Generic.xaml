@@ -3,5 +3,33 @@
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="/NavigationTheme;component/Resources/Window.xaml" />
         <ResourceDictionary Source="/NavigationTheme;component/Resources/Tab.xaml" />
+
+        <ResourceDictionary Source="pack://application:,,,/NavigationTheme;component/Style/Global.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/NavigationTheme;component/Style/Themes/FIcon.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/NavigationTheme;component/Control/FButton.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/NavigationTheme;component/Control/WindowBase.xaml" />
+
+        <ResourceDictionary Source="pack://application:,,,/NavigationTheme;component/Style/Themes/TextBox.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/NavigationTheme;component/Style/Themes/ScrollViewer.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/NavigationTheme;component/Style/Themes/CheckBox.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/NavigationTheme;component/Style/Themes/RadioButton.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/NavigationTheme;component/Style/Themes/Menu.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/NavigationTheme;component/Style/Themes/DataGrid.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/NavigationTheme;component/Style/Themes/TreeView.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/NavigationTheme;component/Style/Themes/LoopProcessBar.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/NavigationTheme;component/Style/Themes/ComboBox.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/NavigationTheme;component/Style/Themes/Calendar.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/NavigationTheme;component/Style/Themes/ToggleButton.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/NavigationTheme;component/Style/Themes/DatePicker.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/NavigationTheme;component/Style/Themes/Separator.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/NavigationTheme;component/Style/Themes/ProgressBar.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/NavigationTheme;component/Style/Themes/ListBox.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/NavigationTheme;component/Style/Themes/PasswordBox.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/NavigationTheme;component/Style/Themes/ListView.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/NavigationTheme;component/Style/Themes/TabControl.xaml"/>
+
+        <ResourceDictionary Source="pack://application:,,,/NavigationTheme;component/Control/MultiComboBox.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/NavigationTheme;component/Control/HighTextBlock.xaml" />
+
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

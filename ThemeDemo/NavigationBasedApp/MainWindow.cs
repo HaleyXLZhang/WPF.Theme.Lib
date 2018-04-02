@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Drawing;
 using System.Reflection;
 using System.Windows;
 using System.Windows.Controls;
@@ -11,8 +12,7 @@ using System.Windows.Navigation;
 namespace NavigationTheme
 {
     public class MainWindow : NavigationWindow
-    {
-
+    { 
         static MainWindow()
         {
             DefaultStyleKeyProperty.OverrideMetadata(typeof(MainWindow), new FrameworkPropertyMetadata(typeof(MainWindow)));
@@ -46,7 +46,6 @@ namespace NavigationTheme
             ApplicationVersion = Assembly.GetExecutingAssembly().GetName().Version.ToString();
             this.AddHandler(Button.ClickEvent, new RoutedEventHandler(ButtonClicked));
             this.MouseMove += MainWindow_MouseMove;
-
             //User icon
             System.Windows.Controls.Image image = this.GetTemplateChild("ImageUrl") as System.Windows.Controls.Image;
             if (image != null && image.Visibility == Visibility.Visible)
@@ -57,7 +56,6 @@ namespace NavigationTheme
                 bitmapImage.EndInit();
                 image.Source = bitmapImage;
             }
-
         }
         private void MainWindow_MouseMove(object sender, MouseEventArgs e)
         {

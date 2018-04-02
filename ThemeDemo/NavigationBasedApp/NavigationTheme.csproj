@@ -58,10 +58,42 @@
     <ApplicationIcon>Resources\Images\icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Expression.Controls, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\Microsoft.Expression.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Expression.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\Microsoft.Expression.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Expression.Effects, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\Microsoft.Expression.Effects.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Expression.Interactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\Microsoft.Expression.Interactions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Expression.Prototyping.Interactivity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\Microsoft.Expression.Prototyping.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Windows.Shell, Version=6.0.147.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\Microsoft.Windows.Shell.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Utility, Version=3.0.0.1, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\System.Utility.dll</HintPath>
+    </Reference>
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -75,6 +107,46 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Control\BulletCheckBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Control\BusyBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Control\FButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Control\FImage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Control\HighTextBlock.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Control\MessageBoxX.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Control\MultiComboBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Control\ProgressRing.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Control\WaitingBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Control\WindowBase.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Resources\Tab.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -85,6 +157,94 @@
       <Generator>MSBuild:Compile</Generator>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Page>
+    <Page Include="Style\Colors.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\Global.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\Themes\Calendar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\Themes\CheckBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\Themes\ComboBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\Themes\DataGrid.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\Themes\DatePicker.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\Themes\FIcon.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\Themes\ListBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\Themes\ListView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\Themes\LoopProcessBar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\Themes\Menu.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\Themes\PasswordBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\Themes\ProgressBar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\Themes\RadioButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\Themes\ScrollViewer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\Themes\Separator.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\Themes\Share.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\Themes\TabControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\Themes\TextBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\Themes\ToggleButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Style\Themes\TreeView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Themes\Generic.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -93,6 +253,49 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CaseConverter.cs" />
+    <Compile Include="Control\AnimatedGIF.cs" />
+    <Compile Include="Control\BulletCheckBox.xaml.cs">
+      <DependentUpon>BulletCheckBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Control\BusyBox.xaml.cs">
+      <DependentUpon>BusyBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Control\FButton.xaml.cs">
+      <DependentUpon>FButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Control\FImage.xaml.cs">
+      <DependentUpon>FImage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Control\HighTextBlock.xaml.cs">
+      <DependentUpon>HighTextBlock.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Control\MessageBoxX.xaml.cs">
+      <DependentUpon>MessageBoxX.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Control\MultiComboBox.xaml.cs">
+      <DependentUpon>MultiComboBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Control\ProgressRing.cs" />
+    <Compile Include="Control\ThumbnailImage\EnumThumbnail.cs" />
+    <Compile Include="Control\ThumbnailImage\ImageThumbnailProvider.cs" />
+    <Compile Include="Control\ThumbnailImage\IThumbnailProvider.cs" />
+    <Compile Include="Control\ThumbnailImage\ThumbnailImage.cs" />
+    <Compile Include="Control\ThumbnailImage\ThumbnailProviderFactory.cs" />
+    <Compile Include="Control\ThumbnailImage\VedioThumbnailProvider.cs" />
+    <Compile Include="Control\ThumbnailImage\WebImageThumbnailProvider.cs" />
+    <Compile Include="Control\VirtualizingWrapPanel.cs" />
+    <Compile Include="Control\WaitingBox.xaml.cs">
+      <DependentUpon>WaitingBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Control\WindowBase.xaml.cs">
+      <DependentUpon>WindowBase.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Converter\BackgroundToForegroundConverter.cs" />
+    <Compile Include="Converter\Converters.cs" />
+    <Compile Include="Converter\PercentToAngleConverter.cs" />
+    <Compile Include="Converter\ThicknessToDoubleConverter.cs" />
+    <Compile Include="Converter\TreeViewMarginConverter.cs" />
+    <Compile Include="Converter\TrueToFalseConverter.cs" />
     <Compile Include="MainWindow.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -107,6 +310,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="{Core}\Common\BaseNotifyPropertyChanged.cs" />
+    <Compile Include="{Core}\Common\ConsoleAsynNotify.cs" />
+    <Compile Include="{Core}\Common\DefaultAsynNotify.cs" />
+    <Compile Include="{Core}\Common\Exceptions.cs" />
+    <Compile Include="{Core}\Common\FileAsynNotify.cs" />
+    <Compile Include="{Core}\Common\IAsynNotify.cs" />
+    <Compile Include="{Core}\ControlAttachProperty.cs" />
+    <Compile Include="{Core}\ControlExtession.cs" />
+    <Compile Include="{Core}\Messenger.cs" />
+    <Compile Include="{Core}\RelayCommand.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -116,6 +329,7 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
+    <Resource Include="Resources\iconfont.ttf" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -136,6 +350,19 @@
     <Resource Include="Resources\Images\icon.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DLL\Microsoft.Expression.Controls.dll" />
+    <Content Include="DLL\Microsoft.Expression.Drawing.dll" />
+    <Content Include="DLL\Microsoft.Expression.Effects.dll" />
+    <Content Include="DLL\Microsoft.Expression.Interactions.dll" />
+    <Content Include="DLL\Microsoft.Expression.Prototyping.Interactivity.dll" />
+    <Content Include="DLL\Microsoft.Windows.Shell.dll" />
+    <Content Include="DLL\System.Utility.dll" />
+    <Content Include="DLL\System.Windows.Interactivity.dll" />
+    <Resource Include="Resources\logo.ico" />
+    <Resource Include="Resources\logo.png" />
+    <Resource Include="usister.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
