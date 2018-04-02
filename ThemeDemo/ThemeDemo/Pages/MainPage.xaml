@@ -2,9 +2,11 @@
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:navigationtheme="clr-namespace:NavigationTheme;assembly=NavigationTheme"
       mc:Ignorable="d" 
-      d:DesignHeight="300" d:DesignWidth="300"
+     FontFamily="Microsoft YaHei UI"
+                FontSize="12"
       Title="MainPage">
     <Page.Resources>
         <Style  TargetType="Hyperlink">
@@ -38,13 +40,13 @@
             <RowDefinition Height="40"/>
             <RowDefinition Height="40"/>
         </Grid.RowDefinitions>
-        <Button Width="120" Grid.Row="4" Click="Button_Click"  >WelcomePage1</Button>
-        <TextBlock Grid.Row="1" Text="Welcome to WPF World1." VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <navigationtheme:FButton FIcon="&#xe66f;"  FIconSize="24" Width="120" Grid.Row="4" Click="Button_Click"  >Export</navigationtheme:FButton>
+        <TextBlock Grid.Row="1" Foreground="Black" Text="Welcome to WPF World1." VerticalAlignment="Center" HorizontalAlignment="Center"/>
 
 
-        <TextBox Grid.Row="0" Width="200" Height="30" Margin="3"  Style="{StaticResource LabelOpenFileTextBox}"></TextBox>
-        <TextBox Grid.Row="2" Width="200" Height="30" Margin="3" Style="{StaticResource LabelOpenFolderTextBox}"></TextBox>
-        <TextBox Grid.Row="3" Width="200" Height="30" Margin="3" Style="{StaticResource LabelSaveFileTextBox}"></TextBox>
+        <TextBox Grid.Row="0" Width="460" Height="30" Margin="3"  Style="{StaticResource LabelOpenFileTextBox}"></TextBox>
+        <TextBox Grid.Row="2" Width="460" Height="30" Margin="3" Style="{StaticResource LabelOpenFolderTextBox}"></TextBox>
+        <TextBox Grid.Row="3" Width="460" Height="30" Margin="3" Style="{StaticResource LabelSaveFileTextBox}"></TextBox>
 
 
     </Grid>

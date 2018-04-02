@@ -22,10 +22,10 @@
     <DropShadowEffect x:Key="DefaultDropShadow" Color="Black" BlurRadius="5" ShadowDepth="2" Direction="315" Opacity="0.6" />
     <!--输入组件-->
     <SolidColorBrush x:Key="TextForeground" Color="White"></SolidColorBrush>
-    <SolidColorBrush x:Key="TextBackground" Color="#0D234B"></SolidColorBrush>
-    <SolidColorBrush x:Key="TextSelectionBrush" Color="#8F8787"></SolidColorBrush>
+    <SolidColorBrush x:Key="TextBackground" Color="#FF353F42"></SolidColorBrush>
+    <SolidColorBrush x:Key="TextSelectionBrush" Color="Black"></SolidColorBrush>
     <!--TextBox默认Label颜色-->
-    <SolidColorBrush x:Key="TextLabelBackground" Color="#508AB6"></SolidColorBrush>
+    <SolidColorBrush x:Key="TextLabelBackground" Color="#FF1D262C"></SolidColorBrush>
     <!--输入框-->
     <SolidColorBrush x:Key="ControlBorderBrush" Color="#999C9F"></SolidColorBrush>
     <SolidColorBrush x:Key="MouseOverBorderBrush" Color="#F6D1D1"></SolidColorBrush>
@@ -58,7 +58,7 @@
     <!--Popup,ComboBox-->
     <SolidColorBrush x:Key="PopupBackground" Color="#066EB3"></SolidColorBrush>
     <!--Button-->
-    <SolidColorBrush x:Key="ButtonBackground" Color="#1D4A9A"></SolidColorBrush>
+    <SolidColorBrush x:Key="ButtonBackground" Color="#FF1D262C"></SolidColorBrush>
     <SolidColorBrush x:Key="ButtonForeground" Color="White"></SolidColorBrush>
     <SolidColorBrush x:Key="ButtonMouseOverBackground" Color="Orange"></SolidColorBrush>
     <SolidColorBrush x:Key="ButtonMouseOverForeground" Color="White"></SolidColorBrush>

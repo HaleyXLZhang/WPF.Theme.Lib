@@ -17,12 +17,12 @@
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
-        <Setter Setter.Property="Control.Background" Setter.Value="#00FFFFFF" />
-        <Setter Setter.Property="Control.FontFamily" Setter.Value="Webdings" />
-        <Setter Setter.Property="Control.FontSize" Setter.Value="13.333" />
+        <Setter Setter.Property="Control.Background" Setter.Value="##FF1D262C" />
+        <Setter Setter.Property="Control.FontFamily" Setter.Value="Microsoft YaHei UI" />
+        <Setter Setter.Property="Control.FontSize" Setter.Value="12" />
         <Setter Setter.Property="Control.Foreground" Setter.Value="{StaticResource DimContentColor}" />
         <Setter Setter.Property="FrameworkElement.Cursor" Setter.Value="Hand" />
-        <Setter Setter.Property="FrameworkElement.Margin" Setter.Value="0,2,3,0" />
+        <Setter Setter.Property="FrameworkElement.Margin" Setter.Value="0,0,0,0" />
         <Style.Triggers>
             <Trigger Trigger.Property="UIElement.IsMouseOver" Trigger.Value="True">
                 <Setter Setter.Property="Control.Foreground" Setter.Value="{StaticResource MidGlowContentColor}" />
@@ -169,9 +169,9 @@
                                     </StackPanel>
                                 </Grid>
                                 <StackPanel Grid.Row="0" Grid.Column="1" StackPanel.Orientation="Horizontal" Panel.Background="#FF1D262C">
-                                    <local:FButton Button.Name="minimizeButton" Width="60" Cursor="Hand" Margin="0,2,3,0"  Foreground="{StaticResource DimContentColor}"   Background="#00FFFFFF" FontFamily="Webdings"  FontSize="13.333"  FIcon="&#xe60d;"   />
-                                    <local:FButton Button.Name="restoreButton" Width="60" Background="#00FFFFFF"  Cursor="Hand" Margin="0,2,3,0"  Foreground="{StaticResource DimContentColor}"     FontFamily="Webdings"  FontSize="13.333"    FIcon="&#xe65b;" />
-                                    <local:FButton Button.Name="closeButton" Width="60"  Background="#00FFFFFF" Cursor="Hand" Margin="0,2,3,0"  Foreground="{StaticResource DimContentColor}"     FontFamily="Webdings"  FontSize="13.333"  FIcon="&#xe60a;" />
+                                    <local:FButton Button.Name="minimizeButton"   FIcon="&#xe60d;"   />
+                                    <local:FButton Button.Name="restoreButton"      FIcon="&#xe65b;" />
+                                    <local:FButton Button.Name="closeButton"  MouseOverBackground="Red" FIcon="&#xe60a;" />
                                 </StackPanel>
                                 <Grid Panel.Background="{TemplateBinding Control.Background}" Grid.Row="1" Grid.ColumnSpan="2" FrameworkElement.Margin="0">
                                     <AdornerDecorator>

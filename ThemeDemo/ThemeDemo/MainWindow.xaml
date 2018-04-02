@@ -9,6 +9,7 @@
         ResizeMode="CanResize" 
       Background="White"
         Title="Auto-Tool" 
-       
+       FontFamily="Microsoft YaHei UI"
+                FontSize="12"
         Source="Pages/MainPage.xaml" >
 </sfs:MainWindow>
