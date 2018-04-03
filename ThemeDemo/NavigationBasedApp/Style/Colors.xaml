@@ -2,14 +2,14 @@
                     xmlns:sys="clr-namespace:System;assembly=mscorlib"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <!--Window窗体-->
-    <SolidColorBrush x:Key="WindowBackground" Color="#007ACB"></SolidColorBrush>
+    <SolidColorBrush x:Key="WindowBackground" Color="White"></SolidColorBrush>
     <SolidColorBrush x:Key="WindowInnerBackground" Color="Transparent"></SolidColorBrush>
-    <SolidColorBrush x:Key="WindowBorderBrush" Color="#920892"></SolidColorBrush>
-    <DropShadowEffect x:Key="WindowDropShadow" Color="#F472F4" BlurRadius="8" ShadowDepth="0" Direction="0" Opacity="0.7" />
+    <SolidColorBrush x:Key="WindowBorderBrush" Color="#FF1D262C"></SolidColorBrush>
+    <DropShadowEffect x:Key="WindowDropShadow" Color="#FF1D262C" BlurRadius="8" ShadowDepth="0" Direction="0" Opacity="0.7" />
     <SolidColorBrush x:Key="CaptionForeground" Color="White"></SolidColorBrush>
     <LinearGradientBrush x:Key="CaptionBackground" StartPoint="0.5,0" EndPoint="0.5,1">
-        <GradientStop Color="#571457" Offset="0"/>
-        <GradientStop Color="#6A196A" Offset="1"/>
+        <GradientStop Color="#FF1D262C" Offset="0"/>
+        <GradientStop Color="#FF1D262C" Offset="1"/>
     </LinearGradientBrush>
     <!--MessageBoxX-->
     <SolidColorBrush x:Key="InfoForeground" Color="White"></SolidColorBrush>

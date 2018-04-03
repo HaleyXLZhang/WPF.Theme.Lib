@@ -1,4 +1,4 @@
-﻿<Page x:Class="ThemeDemo.MainPage"
+﻿<Page x:Class="ThemeDemo.Popup.Pages.MainPagePopup"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -7,7 +7,9 @@
       mc:Ignorable="d" 
       FontFamily="Microsoft YaHei UI"
       FontSize="12"
-      Title="MainPage">
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="MainPagePopup">
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="40"/>
@@ -17,14 +19,12 @@
             <RowDefinition Height="40"/>
             <RowDefinition Height="40"/>
         </Grid.RowDefinitions>
-        <navigationtheme:FButton FIcon="&#xe66f;"  FIconSize="24" Width="120" Grid.Row="4" Click="Button_Click"  >Export</navigationtheme:FButton>
         <TextBlock Grid.Row="1" Foreground="Black" Text="Welcome to WPF World1." VerticalAlignment="Center" HorizontalAlignment="Center"/>
 
 
         <TextBox Grid.Row="0" Width="460" Height="30" Margin="3"  Style="{StaticResource LabelOpenFileTextBox}"></TextBox>
         <TextBox Grid.Row="2" Width="460" Height="30" Margin="3" Style="{StaticResource LabelOpenFolderTextBox}"></TextBox>
         <TextBox Grid.Row="3" Width="460" Height="30" Margin="3" Style="{StaticResource LabelSaveFileTextBox}"></TextBox>
-        <navigationtheme:FButton Grid.Row="5" FIcon="" Width="120" Click="FButton_Click" >Show Popup</navigationtheme:FButton>
 
     </Grid>
     

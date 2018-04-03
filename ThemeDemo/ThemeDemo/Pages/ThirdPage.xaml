@@ -4,29 +4,10 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:ThemeDemo"
+      xmlns:navigationtheme="clr-namespace:NavigationTheme;assembly=NavigationTheme"
       mc:Ignorable="d" 
       d:DesignHeight="300" d:DesignWidth="300"
       Title="ThirdPage">
-    <Page.Resources>
-        <Style  TargetType="Hyperlink">
-            <Setter  Property ="Foreground"  Value ="#209AC2"/>
-            <!-- 清除文字修饰(去掉下划线) -->
-            <Setter  Property ="TextBlock.TextDecorations"  Value ="{x:Null}"/>
-            <Style.Triggers >
-                <Trigger  Property ="IsMouseOver"  Value ="True">
-                    <Setter  Property ="Foreground"  Value ="#F27D00"/>
-                    <!-- 在鼠标悬停时显示下划线 -->
-                    <Setter  Property ="TextBlock.TextDecorations">
-                        <Setter.Value>
-                            <TextDecorationCollection>
-                                <TextDecoration  Location ="Underline"/>
-                            </TextDecorationCollection>
-                        </Setter.Value>
-                    </Setter>
-                </Trigger>
-            </Style.Triggers>
-        </Style>
-    </Page.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="30"/>
@@ -36,7 +17,7 @@
             <RowDefinition Height="30"/>
             <RowDefinition Height="30"/>
         </Grid.RowDefinitions>
-        <Button Width="120" Grid.Row="4" Click="Button_Click">WelcomePage3</Button>
-        <TextBlock Grid.Row="1" Text="Welcome to WPF World3." VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <navigationtheme:FButton FIcon="" Width="120" Grid.Row="4" Click="Button_Click">WelcomePage3</navigationtheme:FButton>
+        <TextBlock Grid.Row="1" Foreground="Black" Text="Welcome to WPF World3." VerticalAlignment="Center" HorizontalAlignment="Center"/>
     </Grid>
 </Page>

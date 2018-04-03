@@ -329,7 +329,7 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
-    <Resource Include="Resources\iconfont.ttf" />
+    <Resource Include="Resources\IconFont\iconfont.ttf" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -360,6 +360,10 @@
     <Content Include="DLL\Microsoft.Windows.Shell.dll" />
     <Content Include="DLL\System.Utility.dll" />
     <Content Include="DLL\System.Windows.Interactivity.dll" />
+    <Content Include="Resources\IconFont\demo.css" />
+    <Content Include="Resources\IconFont\demo.html" />
+    <Content Include="Resources\IconFont\iconfont.css" />
+    <Resource Include="Resources\IconFont\Remark.txt" />
     <Resource Include="Resources\logo.ico" />
     <Resource Include="Resources\logo.png" />
     <Resource Include="usister.txt" />

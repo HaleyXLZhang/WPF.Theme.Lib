@@ -1,6 +1,8 @@
-﻿using System;
+﻿using NavigationTheme;
+using System;
 using System.Windows;
 using System.Windows.Controls;
+using ThemeDemo.Popup;
 
 namespace ThemeDemo
 {
@@ -26,6 +28,13 @@ namespace ThemeDemo
             }
         }
 
-        
+        private void FButton_Click(object sender, RoutedEventArgs e)
+        {
+            PopupTemplate win = new PopupTemplate();
+            win.PopupContext.Source = new Uri("../Popup/Pages/MainPagePopup.xaml", UriKind.Relative);
+            win.ShowDialog();
+        }
+
+       
     }
 }
