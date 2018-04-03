@@ -12,7 +12,7 @@
         <GradientStop Color="#FF1D262C" Offset="1"/>
     </LinearGradientBrush>
     <!--MessageBoxX-->
-    <SolidColorBrush x:Key="InfoForeground" Color="White"></SolidColorBrush>
+    <SolidColorBrush x:Key="InfoForeground" Color="Black"></SolidColorBrush>
     <SolidColorBrush x:Key="QuestionForeground" Color="#74B80C"></SolidColorBrush>
     <SolidColorBrush x:Key="WarningForeground" Color="DarkOrange"></SolidColorBrush>
     <SolidColorBrush x:Key="ErrorForeground" Color="#E74E4E"></SolidColorBrush>

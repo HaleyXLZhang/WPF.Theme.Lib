@@ -18,8 +18,12 @@
                 <RowDefinition Height="30"/>
                 <RowDefinition Height="30"/>
             </Grid.RowDefinitions>
+
+            <navigationtheme:FButton FIcon="" Click="FButton_Click" ></navigationtheme:FButton>
+            
             <navigationtheme:FButton FIcon="" Width="120" Grid.Row="4"  Click="Button_Click">WelcomePage2</navigationtheme:FButton>
             <TextBlock Grid.Row="1" Foreground="Black" Text="Welcome to WPF World2." VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <ProgressBar Grid.Row="5" Margin="5"    Value="{Binding Percent,Mode=OneWay}" Style="{StaticResource SimpleProgressBar}" x:Name="pro4"></ProgressBar>
         </Grid>
     </StackPanel>
 

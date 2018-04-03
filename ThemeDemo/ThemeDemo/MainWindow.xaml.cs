@@ -25,7 +25,13 @@ namespace ThemeDemo
             if (e.ExtraData != null)
             {
                 // Do something here...
-                System.Windows.MessageBox.Show(this,string.Format("Capture Page Skip Message:{0}",e.ExtraData),"Capture",MessageBoxButton.OK,MessageBoxImage.Information,MessageBoxResult.OK);
+                // System.Windows.MessageBox.Show(this,string.Format("Capture Page Skip Message:{0}",e.ExtraData),"Capture",MessageBoxButton.OK,MessageBoxImage.Information,MessageBoxResult.OK);
+
+                MessageBoxX.Info(string.Format("Capture Page Skip Message:{0}", e.ExtraData));
+
+                MessageBoxX.Error(string.Format("Capture Page Skip Message:{0}", e.ExtraData));
+                MessageBoxX.Warning(string.Format("Capture Page Skip Message:{0}", e.ExtraData));
+                MessageBoxX.Question(string.Format("Capture Page Skip Message:{0}", e.ExtraData));
               
             }
         }
