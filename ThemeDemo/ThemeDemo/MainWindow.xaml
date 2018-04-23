@@ -11,5 +11,5 @@
         Title="Auto-Tool" 
        FontFamily="Microsoft YaHei UI"
                 FontSize="12"
-        Source="Pages/MainPage.xaml" >
+        Source="Pages/MainPage.xaml" Width="800" Height="750" >
 </sfs:MainWindow>

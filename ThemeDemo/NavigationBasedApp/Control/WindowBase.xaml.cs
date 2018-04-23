@@ -149,8 +149,10 @@ namespace NavigationTheme
             this.BindCommand(CloseWindowCommand, this.CloseCommand_Execute);
             this.BindCommand(MaximizeWindowCommand, this.MaxCommand_Execute);
             this.BindCommand(MinimizeWindowCommand, this.MinCommand_Execute);
+           
         }
 
+   
         private void CloseCommand_Execute(object sender, ExecutedRoutedEventArgs e)
         {
             this.Close();
@@ -168,10 +170,10 @@ namespace NavigationTheme
             e.Handled = true;
         }
 
-        protected override void OnMouseLeftButtonDown(MouseButtonEventArgs e)
-        {
-            base.OnMouseLeftButtonDown(e);
-            this.DragMove();
-        }
+        //protected override void OnMouseLeftButtonDown(MouseButtonEventArgs e)
+        //{
+        //    base.OnMouseLeftButtonDown(e);
+        //    this.DragMove();
+        //}
     }
 }
