@@ -78,9 +78,8 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>DLL\Microsoft.Expression.Prototyping.Interactivity.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Windows.Shell, Version=6.0.147.0, Culture=neutral, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>DLL\Microsoft.Windows.Shell.dll</HintPath>
+    <Reference Include="Microsoft.Windows.Shell, Version=3.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Windows.Shell.3.0.1.0\lib\net40\Microsoft.Windows.Shell.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -323,13 +322,17 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
-    <Resource Include="Resources\IconFont\iconfont.ttf" />
+    <Resource Include="Resources\IconFont\iconfont.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -352,14 +355,30 @@
     </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DLL\Microsoft.Expression.Controls.dll" />
-    <Content Include="DLL\Microsoft.Expression.Drawing.dll" />
-    <Content Include="DLL\Microsoft.Expression.Effects.dll" />
-    <Content Include="DLL\Microsoft.Expression.Interactions.dll" />
-    <Content Include="DLL\Microsoft.Expression.Prototyping.Interactivity.dll" />
-    <Content Include="DLL\Microsoft.Windows.Shell.dll" />
-    <Content Include="DLL\System.Utility.dll" />
-    <Content Include="DLL\System.Windows.Interactivity.dll" />
+    <Content Include="DLL\Microsoft.Expression.Controls.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DLL\Microsoft.Expression.Drawing.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DLL\Microsoft.Expression.Effects.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DLL\Microsoft.Expression.Interactions.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DLL\Microsoft.Expression.Prototyping.Interactivity.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="DLL\Microsoft.Windows.Shell.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="DLL\System.Utility.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DLL\System.Windows.Interactivity.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Resources\IconFont\demo.css" />
     <Content Include="Resources\IconFont\demo.html" />
     <Content Include="Resources\IconFont\iconfont.css" />

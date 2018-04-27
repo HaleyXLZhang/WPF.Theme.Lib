@@ -4,10 +4,24 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:navigationtheme="clr-namespace:NavigationTheme;assembly=NavigationTheme"
+      xmlns:collections="clr-namespace:System.Collections;assembly=mscorlib"
+      xmlns:system="clr-namespace:System;assembly=mscorlib"
       mc:Ignorable="d" 
       FontFamily="Microsoft YaHei UI"
       FontSize="12"
       Title="MainPage">
+    <Page.Resources>
+        <collections:ArrayList x:Key="items">
+            <system:String >1111</system:String>
+            <system:String>2222</system:String>
+            <system:String>44444</system:String>
+            <system:String>555555</system:String>
+            <system:String>555555</system:String>
+            <system:String>包含附包含附加属性包含附加属性加属性</system:String>
+            <system:String>按钮的样式</system:String>
+            <system:String>21211313</system:String>
+        </collections:ArrayList>
+    </Page.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="40"/>
@@ -16,16 +30,36 @@
             <RowDefinition Height="40"/>
             <RowDefinition Height="40"/>
             <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
         </Grid.RowDefinitions>
         <navigationtheme:FButton FIcon="&#xe66f;"  FIconSize="24" Width="120" Grid.Row="4" Click="Button_Click"  >Export</navigationtheme:FButton>
-        <TextBlock Grid.Row="1" Foreground="Black" Text="Welcome to WPF World1." VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBlock Grid.Row="1"  Text="Welcome to WPF World1." VerticalAlignment="Center" HorizontalAlignment="Center"/>
 
 
-        <TextBox Grid.Row="0" Width="460" Height="30" Margin="3"  Style="{StaticResource LabelOpenFileTextBox}"></TextBox>
-        <TextBox Grid.Row="2" Width="460" Height="30" Margin="3" Style="{StaticResource LabelOpenFolderTextBox}"></TextBox>
-        <TextBox Grid.Row="3" Width="460" Height="30" Margin="3" Style="{StaticResource LabelSaveFileTextBox}"></TextBox>
+        <TextBox Grid.Row="0" Width="460" Foreground="White" Height="30" Margin="3"  Style="{StaticResource LabelOpenFileTextBox}"></TextBox>
+        <TextBox Grid.Row="2" Width="460" Foreground="White" Height="30" Margin="3" Style="{StaticResource LabelOpenFolderTextBox}"></TextBox>
+        <TextBox Grid.Row="3" Width="460" Foreground="White" Height="30" Margin="3" Style="{StaticResource LabelSaveFileTextBox}"></TextBox>
         <navigationtheme:FButton Grid.Row="5" FIcon="" Width="120" Click="FButton_Click" >Show Popup</navigationtheme:FButton>
+        <ComboBox Foreground="White" Margin="5" Grid.Row="6" ItemsSource="{StaticResource items}" navigationtheme:ControlAttachProperty.Label="选择性别" 
+                      Style="{StaticResource LabelComboBox}"  navigationtheme:ControlAttachProperty.Watermark="水印" />
+        <DatePicker Grid.Row="7" Margin="3" SelectedDate="{x:Static system:DateTime.Today}"/>
 
+        <TextBox   Foreground="Black" Grid.Row="8" Width="300">sdasdasdgasjdgasusdafasdasasdasdas</TextBox>
+        <RichTextBox Grid.Row="9"  Grid.RowSpan="3" >
+            <RichTextBox.Document>
+                <FlowDocument Focusable="True" LineHeight="1">
+                </FlowDocument>
+            </RichTextBox.Document>
+        </RichTextBox>
+
+        <navigationtheme:FButton Grid.Row="12" FIcon="&#xe628;" Margin="3" FIconSize="24" Width="120"   Content="Waiting" Click="FButton_Click_1"></navigationtheme:FButton>
     </Grid>
-    
+  
 </Page>

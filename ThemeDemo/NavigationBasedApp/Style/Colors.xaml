@@ -17,13 +17,13 @@
     <SolidColorBrush x:Key="WarningForeground" Color="DarkOrange"></SolidColorBrush>
     <SolidColorBrush x:Key="ErrorForeground" Color="#E74E4E"></SolidColorBrush>
     <!--WaitingBox-->
-    <SolidColorBrush x:Key="WaitingBoxBackground" Color="#921692"></SolidColorBrush>
+    <SolidColorBrush x:Key="WaitingBoxBackground" Color="#DCDCDC"></SolidColorBrush>
     <!--边框：Menu-->
     <DropShadowEffect x:Key="DefaultDropShadow" Color="Black" BlurRadius="5" ShadowDepth="2" Direction="315" Opacity="0.6" />
     <!--输入组件-->
-    <SolidColorBrush x:Key="TextForeground" Color="White"></SolidColorBrush>
-    <SolidColorBrush x:Key="TextBackground" Color="#FF353F42"></SolidColorBrush>
-    <SolidColorBrush x:Key="TextSelectionBrush" Color="Black"></SolidColorBrush>
+    <SolidColorBrush x:Key="TextForeground" Color="Black"></SolidColorBrush>
+    <SolidColorBrush x:Key="TextBackground" Color="#adadae"></SolidColorBrush>
+    <SolidColorBrush x:Key="TextSelectionBrush" Color="White"></SolidColorBrush>
     <!--TextBox默认Label颜色-->
     <SolidColorBrush x:Key="TextLabelBackground" Color="#FF1D262C"></SolidColorBrush>
     <!--输入框-->
@@ -38,17 +38,17 @@
     <!--ItemsControl:DataGrid,Tree-->
     <sys:Double x:Key="HeaderFontSize">14</sys:Double>
     <SolidColorBrush x:Key="HeaderBorderBrush" Color="#A6FFA500"></SolidColorBrush>
-    <SolidColorBrush x:Key="HeaderBackground" Color="#0A48D3"></SolidColorBrush>
-    <SolidColorBrush x:Key="ItemsContentBackground" Color="#1389D7"></SolidColorBrush>
+    <SolidColorBrush x:Key="HeaderBackground" Color="#EDEDED"></SolidColorBrush>
+    <SolidColorBrush x:Key="ItemsContentBackground" Color="#ADADAE"></SolidColorBrush>
     <SolidColorBrush x:Key="ItemsAlternationContentBackground" Color="#128EE0"></SolidColorBrush>
     <SolidColorBrush x:Key="GridLinesBrush" Color="#A6D0C2A7"></SolidColorBrush>
     <SolidColorBrush x:Key="ItemSelectedForeground" Color="White"></SolidColorBrush>
-    <SolidColorBrush x:Key="ItemSelectedBackground" Color="#A145F8"></SolidColorBrush>
-    <SolidColorBrush x:Key="ItemMouseOverBackground" Color="#BA7DF4"></SolidColorBrush>
+    <SolidColorBrush x:Key="ItemSelectedBackground" Color="#7F7F7F"></SolidColorBrush>
+    <SolidColorBrush x:Key="ItemMouseOverBackground" Color="#C9C9C9"></SolidColorBrush>
     <SolidColorBrush x:Key="ItemMouseOverForeground" Color="White"></SolidColorBrush>
     <!--高亮：日历Today-->
-    <SolidColorBrush x:Key="ItemHighlighteBackground" Color="Blue"></SolidColorBrush>
-    <SolidColorBrush x:Key="ItemHighlighteForeground" Color="White"></SolidColorBrush>
+    <SolidColorBrush x:Key="ItemHighlighteBackground" Color="#EBEBEB"></SolidColorBrush>
+    <SolidColorBrush x:Key="ItemHighlighteForeground" Color="Black"></SolidColorBrush>
 
     <!--普通无背景按钮-->
     <SolidColorBrush x:Key="CheckedForeground" Color="#F7B63E"></SolidColorBrush>
@@ -56,7 +56,7 @@
     <SolidColorBrush x:Key="PressedForeground" Color="DarkOrange"></SolidColorBrush>
     <SolidColorBrush x:Key="LinkForeground" Color="#0816BB"></SolidColorBrush>
     <!--Popup,ComboBox-->
-    <SolidColorBrush x:Key="PopupBackground" Color="#066EB3"></SolidColorBrush>
+    <SolidColorBrush x:Key="PopupBackground" Color="#adadae"></SolidColorBrush>
     <!--Button-->
     <SolidColorBrush x:Key="ButtonBackground" Color="#FF1D262C"></SolidColorBrush>
     <SolidColorBrush x:Key="ButtonForeground" Color="White"></SolidColorBrush>

@@ -8,7 +8,6 @@
         <ResourceDictionary Source="pack://application:,,,/NavigationTheme;component/Style/Themes/FIcon.xaml" />
         <ResourceDictionary Source="pack://application:,,,/NavigationTheme;component/Control/FButton.xaml" />
         <ResourceDictionary Source="pack://application:,,,/NavigationTheme;component/Control/WindowBase.xaml" />
-
         <ResourceDictionary Source="pack://application:,,,/NavigationTheme;component/Style/Themes/TextBox.xaml" />
         <ResourceDictionary Source="pack://application:,,,/NavigationTheme;component/Style/Themes/ScrollViewer.xaml" />
         <ResourceDictionary Source="pack://application:,,,/NavigationTheme;component/Style/Themes/CheckBox.xaml"/>
@@ -30,6 +29,8 @@
 
         <ResourceDictionary Source="pack://application:,,,/NavigationTheme;component/Control/MultiComboBox.xaml" />
         <ResourceDictionary Source="pack://application:,,,/NavigationTheme;component/Control/HighTextBlock.xaml" />
+       
+
 
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

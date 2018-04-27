@@ -24,8 +24,8 @@
                    Margin="5,20,10,20" MinWidth="260" MaxWidth="420">新建一个WPF程序在Windows8下面就会出现左边的窗口边框，颜色取决于Windows主题我想在想创建一个右边那样的窗口，要么是窄边，要么没有边</TextBlock>
 
             <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Margin="1" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" HorizontalAlignment="Center">
-                <local:FButton x:Name="btnOK" FIcon="&#xe646;" Width="85" Height="30" CornerRadius="0" Margin="5,5,20,5" Click="btnOK_Click">确定</local:FButton>
-                <local:FButton x:Name="btnCancel" FIcon="&#xe644;" Width="85" Height="30" CornerRadius="0"
+                <local:FButton x:Name="btnOK" FIconSize="18" FIcon="&#xe646;" Width="85" Height="30" CornerRadius="0" Margin="5,5,20,5" Click="btnOK_Click">确定</local:FButton>
+                <local:FButton x:Name="btnCancel" FIconSize="18" FIcon="&#xe644;" Width="85" Height="30" CornerRadius="0"
                            Margin="20,5,10,5" Click="btnCancel_Click">取消</local:FButton>
             </StackPanel>
         </Grid>

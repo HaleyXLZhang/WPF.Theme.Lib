@@ -84,7 +84,7 @@
                                           Background="{TemplateBinding local:ControlAttachProperty.FocusBackground}"/>
                             <!--水印-->
                             <Border Grid.Column="1">
-                                <TextBlock x:Name="Message"  Padding="0" Visibility="Collapsed" Text="{TemplateBinding local:ControlAttachProperty.Watermark}" 
+                                <TextBlock x:Name="Message"   Padding="0" Visibility="Collapsed" Text="{TemplateBinding local:ControlAttachProperty.Watermark}" 
                                        Foreground="{TemplateBinding Foreground}" IsHitTestVisible="False" Opacity="0.6" HorizontalAlignment="Left" TextAlignment="Center" 
                                        VerticalAlignment="Center" Margin="5,2,5,2" />
                             </Border>

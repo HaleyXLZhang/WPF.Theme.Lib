@@ -182,8 +182,8 @@
         <Setter Property="local:ControlAttachProperty.LabelTemplate" >
             <Setter.Value>
                 <ControlTemplate TargetType="ContentControl">
-                    <Border Width="60" Background="{StaticResource TextLabelBackground}">
-                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Right" Margin="2" Text="{TemplateBinding Content}"></TextBlock>
+                    <Border Width="100" Background="{StaticResource TextLabelBackground}">
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Margin="2" Text="{TemplateBinding Content}"></TextBlock>
                     </Border>
                 </ControlTemplate>
             </Setter.Value>

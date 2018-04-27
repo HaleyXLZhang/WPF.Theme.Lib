@@ -6,6 +6,7 @@
         <ResourceDictionary>
 
             <ResourceDictionary.MergedDictionaries>
+
                 <ResourceDictionary Source="pack://application:,,,/NavigationTheme;component/Style/Colors.xaml"/>
                 <ResourceDictionary Source="pack://application:,,,/NavigationTheme;component/Style/Global.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/NavigationTheme;component/Style/Themes/FIcon.xaml" />
@@ -30,6 +31,6 @@
             <Style TargetType="{x:Type ListBox}" BasedOn="{StaticResource DefaultListBox}"></Style>
             <Style TargetType="{x:Type PasswordBox}" BasedOn="{StaticResource DefaultPasswordBox}"></Style>
             <Style TargetType="{x:Type ListView}" BasedOn="{StaticResource DefaultListView}"></Style>
-        </ResourceDictionary> 
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

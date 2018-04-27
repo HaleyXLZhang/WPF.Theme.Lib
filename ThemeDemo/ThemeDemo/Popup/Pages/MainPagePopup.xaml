@@ -22,9 +22,9 @@
         <TextBlock Grid.Row="1" Foreground="Black" Text="Welcome to WPF World1." VerticalAlignment="Center" HorizontalAlignment="Center"/>
 
 
-        <TextBox Grid.Row="0" Width="460" Height="30" Margin="3"  Style="{StaticResource LabelOpenFileTextBox}"></TextBox>
-        <TextBox Grid.Row="2" Width="460" Height="30" Margin="3" Style="{StaticResource LabelOpenFolderTextBox}"></TextBox>
-        <TextBox Grid.Row="3" Width="460" Height="30" Margin="3" Style="{StaticResource LabelSaveFileTextBox}"></TextBox>
+        <TextBox Grid.Row="0" Foreground="White" Width="460" Height="30" Margin="3"  Style="{StaticResource LabelOpenFileTextBox}"></TextBox>
+        <TextBox Grid.Row="2" Foreground="White" Width="460" Height="30" Margin="3" Style="{StaticResource LabelOpenFolderTextBox}"></TextBox>
+        <TextBox Grid.Row="3" Foreground="White" Width="460" Height="30" Margin="3" Style="{StaticResource LabelSaveFileTextBox}"></TextBox>
 
     </Grid>
     

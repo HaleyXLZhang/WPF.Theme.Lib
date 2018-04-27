@@ -11,7 +11,7 @@ using System.Windows.Navigation;
 
 namespace NavigationTheme
 {
-    public class MainWindow : NavigationWindow
+    public class MainWindow : Window
     { 
         static MainWindow()
         {
@@ -59,10 +59,27 @@ namespace NavigationTheme
         }
         private void MainWindow_MouseMove(object sender, MouseEventArgs e)
         {
-            if (e.LeftButton == MouseButtonState.Pressed)
+
+
+            System.Windows.Point pp = Mouse.GetPosition(this);
+            if ( pp.X <= this.ActualWidth && pp.Y <=30 )
             {
-                this.DragMove();
+                if (e.LeftButton == MouseButtonState.Pressed)
+                {
+                    this.DragMove();
+
+                }
             }
+            else
+            {
+               
+            }
+
+
+            //if (e.LeftButton == MouseButtonState.Pressed)
+            //{
+            //    this.DragMove();
+            //}
         }
         private void ButtonClicked(object sender, RoutedEventArgs e)
         {
