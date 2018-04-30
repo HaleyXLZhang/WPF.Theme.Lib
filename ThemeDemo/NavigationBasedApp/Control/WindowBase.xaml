@@ -16,7 +16,7 @@
         <Setter Property="SnapsToDevicePixels" Value="True"/>
         <Setter Property="FIconSize" Value="20"/>
         <Setter Property="CaptionHeight" Value="26"/>
-        <Setter Property="ResizeMode" Value="CanResizeWithGrip"/>
+        <!--<Setter Property="ResizeMode" Value="CanResizeWithGrip"/>-->
         <!--标题栏背景色-->
         <Setter Property="CaptionBackground" Value="{StaticResource CaptionBackground}" />
         <Setter Property="CaptionForeground" Value="{StaticResource CaptionForeground}" />
@@ -97,7 +97,7 @@
         <Setter Property="SnapsToDevicePixels" Value="True"/>
         <Setter Property="FIconSize" Value="20"/>
         <Setter Property="CaptionHeight" Value="26"/>
-        <Setter Property="ResizeMode" Value="NoResize"/>
+        <!--<Setter Property="ResizeMode" Value="NoResize"/>-->
         <Setter Property="WindowState" Value="Maximized"/>
         <!--标题栏背景色-->
         <Setter Property="CaptionBackground" Value="{StaticResource CaptionBackground}" />
@@ -168,7 +168,7 @@
         <Setter Property="SnapsToDevicePixels" Value="True"/>
         <Setter Property="FIconSize" Value="20"/>
         <Setter Property="CaptionHeight" Value="26"/>
-        <Setter Property="ResizeMode" Value="CanResizeWithGrip"/>
+        <!--<Setter Property="ResizeMode" Value="CanResizeWithGrip"/>-->
         <!--标题栏背景色-->
         <Setter Property="CaptionBackground" Value="{StaticResource CaptionBackground}" />
         <Setter Property="CaptionForeground" Value="{StaticResource CaptionForeground}" />

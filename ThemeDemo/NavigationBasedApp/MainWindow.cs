@@ -12,7 +12,7 @@ using System.Windows.Navigation;
 namespace NavigationTheme
 {
     public class MainWindow : Window
-    { 
+    {
         static MainWindow()
         {
             DefaultStyleKeyProperty.OverrideMetadata(typeof(MainWindow), new FrameworkPropertyMetadata(typeof(MainWindow)));
@@ -45,6 +45,7 @@ namespace NavigationTheme
             this.WindowStyle = WindowStyle.None;
             ApplicationVersion = Assembly.GetExecutingAssembly().GetName().Version.ToString();
             this.AddHandler(Button.ClickEvent, new RoutedEventHandler(ButtonClicked));
+          
             this.MouseMove += MainWindow_MouseMove;
             //User icon
             System.Windows.Controls.Image image = this.GetTemplateChild("ImageUrl") as System.Windows.Controls.Image;
@@ -57,29 +58,19 @@ namespace NavigationTheme
                 image.Source = bitmapImage;
             }
         }
+
         private void MainWindow_MouseMove(object sender, MouseEventArgs e)
         {
 
 
             System.Windows.Point pp = Mouse.GetPosition(this);
-            if ( pp.X <= this.ActualWidth && pp.Y <=30 )
+            if (pp.X <= this.ActualWidth && pp.Y <= SystemParameters.CaptionHeight + 48 + 20)
             {
                 if (e.LeftButton == MouseButtonState.Pressed)
                 {
                     this.DragMove();
-
                 }
             }
-            else
-            {
-               
-            }
-
-
-            //if (e.LeftButton == MouseButtonState.Pressed)
-            //{
-            //    this.DragMove();
-            //}
         }
         private void ButtonClicked(object sender, RoutedEventArgs e)
         {

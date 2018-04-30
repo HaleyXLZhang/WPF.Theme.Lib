@@ -40,7 +40,7 @@
     <SolidColorBrush x:Key="HeaderBorderBrush" Color="#A6FFA500"></SolidColorBrush>
     <SolidColorBrush x:Key="HeaderBackground" Color="#EDEDED"></SolidColorBrush>
     <SolidColorBrush x:Key="ItemsContentBackground" Color="#ADADAE"></SolidColorBrush>
-    <SolidColorBrush x:Key="ItemsAlternationContentBackground" Color="#128EE0"></SolidColorBrush>
+    <SolidColorBrush x:Key="ItemsAlternationContentBackground" Color="#9C9C9C"></SolidColorBrush>
     <SolidColorBrush x:Key="GridLinesBrush" Color="#A6D0C2A7"></SolidColorBrush>
     <SolidColorBrush x:Key="ItemSelectedForeground" Color="White"></SolidColorBrush>
     <SolidColorBrush x:Key="ItemSelectedBackground" Color="#7F7F7F"></SolidColorBrush>
