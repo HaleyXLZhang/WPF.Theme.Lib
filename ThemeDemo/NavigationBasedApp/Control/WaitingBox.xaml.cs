@@ -1,17 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
-
-namespace System.Windows
+﻿namespace System.Windows
 {
     /// <summary>
     /// 简单等待框
@@ -52,6 +39,7 @@ namespace System.Windows
         {
             WaitingBox win = new WaitingBox(callback);
             Window pwin = ControlHelper.GetTopWindow();
+            win.WindowStartupLocation = WindowStartupLocation.CenterOwner;
             win.Owner = pwin;
             win.Text = mes;
             win.ShowDialog();

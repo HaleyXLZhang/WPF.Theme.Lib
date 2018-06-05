@@ -32,7 +32,7 @@
     <SolidColorBrush x:Key="FocusBackground" Color="#365080"></SolidColorBrush>
     <SolidColorBrush x:Key="FocusBorderBrush" Color="#EBCECE"></SolidColorBrush>
     <!--ScrollBar-->
-    <SolidColorBrush x:Key="ScrollBarForeround" Color="#877F7F"></SolidColorBrush>
+    <SolidColorBrush x:Key="ScrollBarForeround" Color="#FFFFFF"></SolidColorBrush>
     <SolidColorBrush x:Key="ScrollBarBackground" Color="#3E3E42"></SolidColorBrush>
 
     <!--ItemsControl:DataGrid,Tree-->
@@ -43,8 +43,8 @@
     <SolidColorBrush x:Key="ItemsAlternationContentBackground" Color="#9C9C9C"></SolidColorBrush>
     <SolidColorBrush x:Key="GridLinesBrush" Color="#A6D0C2A7"></SolidColorBrush>
     <SolidColorBrush x:Key="ItemSelectedForeground" Color="White"></SolidColorBrush>
-    <SolidColorBrush x:Key="ItemSelectedBackground" Color="#7F7F7F"></SolidColorBrush>
-    <SolidColorBrush x:Key="ItemMouseOverBackground" Color="#C9C9C9"></SolidColorBrush>
+    <SolidColorBrush x:Key="ItemSelectedBackground" Color="#8B8B7A"></SolidColorBrush>
+    <SolidColorBrush x:Key="ItemMouseOverBackground" Color="#7A7A7A"></SolidColorBrush>
     <SolidColorBrush x:Key="ItemMouseOverForeground" Color="White"></SolidColorBrush>
     <!--高亮：日历Today-->
     <SolidColorBrush x:Key="ItemHighlighteBackground" Color="#EBEBEB"></SolidColorBrush>

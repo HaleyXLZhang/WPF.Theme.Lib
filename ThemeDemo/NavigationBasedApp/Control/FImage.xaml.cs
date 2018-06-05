@@ -31,6 +31,7 @@ namespace NavigationTheme
         public FImage()
         {
             InitializeComponent();
+           
         }
 
         protected override void OnInitialized(EventArgs e)

@@ -210,6 +210,7 @@ namespace System.Windows
         //从Handle中获取Window对象
         private static Window GetWindowFromHwnd(IntPtr hwnd)
         {
+            if (HwndSource.FromHwnd(hwnd) == null) return null;
             return (Window)HwndSource.FromHwnd(hwnd).RootVisual;
         }
 

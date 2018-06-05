@@ -26,10 +26,9 @@
         <ResourceDictionary Source="pack://application:,,,/NavigationTheme;component/Style/Themes/PasswordBox.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/NavigationTheme;component/Style/Themes/ListView.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/NavigationTheme;component/Style/Themes/TabControl.xaml"/>
-
+        <ResourceDictionary Source="pack://application:,,,/NavigationTheme;component/Control/BulletCheckBox.xaml"/>
         <ResourceDictionary Source="pack://application:,,,/NavigationTheme;component/Control/MultiComboBox.xaml" />
         <ResourceDictionary Source="pack://application:,,,/NavigationTheme;component/Control/HighTextBlock.xaml" />
-       
 
 
     </ResourceDictionary.MergedDictionaries>

@@ -1,13 +1,11 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.Drawing;
 using System.Reflection;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 
 namespace NavigationTheme
 {
@@ -38,6 +36,7 @@ namespace NavigationTheme
         public string UserName { get; set; }
         public string ApplicationVersion { get; set; }
         public string UserIconImageUrl { get; set; }
+        public PagesControl PageControlBar { get; set; }
         public MainWindow()
         {
             UserName = Environment.UserName;

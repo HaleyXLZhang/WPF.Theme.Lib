@@ -31,6 +31,7 @@ namespace System.Windows
         public MessageBoxX(EnumNotifyType type, string mes)
         {
             InitializeComponent();
+          
             this.txtMessage.Text = mes;
             //type
             btnCancel.Visibility = Visibility.Collapsed;
